@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive comments section</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comment">
+        <div class="comment-card first">
+          <div class="min-plus">
+            <img src="./images/icon-plus.svg" alt="icon-plus" />
+            <span>12</span>
+            <img src="./images/icon-minus.svg" alt="icon-minus" />
+          </div>
+          <div class="right">
+            <div class="pro-reply">
+              <div class="profile">
+                <img src="./images/avatars/image-amyrobson.png" alt="" />
+                <b class="name">amyrobson</b>
+                <span>1 month ago</span>
+              </div>
+              <div class="reply rep">
+                <img src="./images/icon-reply.svg" alt="" />
+                <span>Reply</span>
+              </div>
+            </div>
+            <p>
+              Impressive! Though it seems the drag feature could be improved.
+              But overall it looks incredible. You've nailed the design and the
+              responsiveness at various breakpoints works really well.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="comment-card first">
+          <div class="min-plus">
+            <img src="./images/icon-plus.svg" alt="icon-plus" />
+            <span>5</span>
+            <img src="./images/icon-minus.svg" alt="icon-minus" />
+          </div>
+          <div class="right">
+            <div class="pro-reply">
+              <div class="profile">
+                <img src="./images/avatars/image-maxblagun.png" alt="" />
+                <b class="name">maxblagun</b>
+                <span>2 week ago ago</span>
+              </div>
+              <div class="reply rep">
+                <img src="./images/icon-reply.svg" alt="" />
+                <span>Reply</span>
+              </div>
+            </div>
+            <p>
+              Woah, your project looks awesome! How long have you been coding
+              for? I'm still new, but think I want to dive into React as well
+              soon. Perhaps you can give me an insight on where I can learn
+              React? Thanks!
+            </p>
+          </div>
+        </div>
+
+        <div class="comment-card second">
+          <div class="min-plus">
+            <img src="./images/icon-plus.svg" alt="icon-plus" />
+            <span>4</span>
+            <img src="./images/icon-minus.svg" alt="icon-minus" />
+          </div>
+          <div class="right">
+            <div class="pro-reply">
+              <div class="profile">
+                <img src="./images/avatars/image-ramsesmiron.png" alt="" />
+                <b class="name">ramsesmiron</b>
+                <span>1 weeek ago</span>
+              </div>
+              <div class="reply rep">
+                <img src="./images/icon-reply.svg" alt="icon-reply" />
+                <span>Reply</span>
+              </div>
+            </div>
+            <p>
+              <span class="reply">@maxblagun</span> If you're still new, I'd
+              recommend focusing on the fundamentals of HTML, CSS, and JS before
+              considering React. It's very tempting to jump ahead but lay a
+              solid foundation first.
+            </p>
+          </div>
+        </div>
+
+        <div class="comment-card second">
+          <div class="min-plus">
+            <img src="./images/icon-plus.svg" alt="icon-plus" />
+            <span>2</span>
+            <img src="./images/icon-minus.svg" alt="icon-minus" />
+          </div>
+          <div class="right">
+            <div class="pro-reply">
+              <div class="profile">
+                <img src="./images/avatars/image-juliusomo.png" alt="" />
+                <b class="name">juliusomo</b>
+                <span id="you">you</span>
+                <span>2 day ago</span>
+              </div>
+              <div class="reply rep edit-delete">
+                <div class="delete">
+                  <img src="./images/icon-delete.svg" alt="icon-reply" />
+                  <span>Delete</span>
+                </div>
+                <div class="edit">
+                  <img src="./images/icon-edit.svg" alt="icon-reply" />
+                  <span>Edit</span>
+                </div>
+              </div>
+            </div>
+            <p>
+              <span class="reply">@ramsesmiron</span>
+              <span
+                >I couldn't agree more with this. Everything moves so fast and
+                it always seems like everyone knows the newest
+                library/framework. But the fundamentals are what stay
+                constant.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="my-comment">
+        <img src="./images//avatars/image-juliusomo.png" alt="juliusomo-img" />
+        <input type="text" placeholder="Add a comment..." />
+        <button>SEND</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
